@@ -1,6 +1,15 @@
 # Task1Reactjs - Web Application Project
 Task1 - ReactJS 
 
+## Technologies Used
+
+- React
+- Vite
+- React Router
+- Axios
+- Tailwind CSS
+
+- 
 ### Installation
 
 1. **Create folder and navigate :**
