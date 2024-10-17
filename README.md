@@ -5,7 +5,7 @@ Task1 - ReactJS
 
 1. **Clone the repository:**
 
-   git clone <your-repo-url>
+   git clone https://github.com/BahaaAbbas/Task1Reactjs.git
 
 2. **Create folder and navigate :**
    
