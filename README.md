@@ -9,16 +9,18 @@ Task1 - ReactJS
 - Axios
 - Tailwind CSS
 
-- 
+  
 ### Installation
 
-1. **Create folder and navigate :**
-   
-   cd my-react-app
 
-2. **Clone the repository:**
+
+1. **Clone the repository:**
 
    git clone https://github.com/BahaaAbbas/Task1Reactjs.git
+
+2. **Create folder and navigate :**
+
+   cd my-react-app
 
 3. **Install the packages and everything related:**
 
