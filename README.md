@@ -1,5 +1,9 @@
-# Task1Reactjs - Web Application Project
+# Task1Reactjs & Task2Reactjs - Web Application Project
 Task1 - ReactJS 
+Task2 - ReactJS
+
+Task2 - Updated the fetch of posts api and used global provider...
+
 
 ## Technologies Used
 

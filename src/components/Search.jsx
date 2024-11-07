@@ -3,9 +3,12 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { MdClear } from "react-icons/md";
+import { useGlobalContext } from './GlobalContext';
+
 
 const Search = () => {
-  const [posts, setPosts] = useState([]);
+
+  // const [posts, setPosts] = useState([]);   // OLD CODE
   const [search, setSearch] = useState('');
   const textRef = useRef(null);
 
@@ -13,11 +16,16 @@ const Search = () => {
     textRef.current.focus();
   }, []);
 
-  useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/posts')
-      .then(response => setPosts(response.data))
-      .catch(error => console.error(error));
-  }, []);
+  const { data: posts } = useGlobalContext();  // NEW CODE
+
+   // OLD CODE
+  // useEffect(() => {
+  //   axios.get('https://jsonplaceholder.typicode.com/posts')
+  //     .then(response => setPosts(response.data))
+  //     .catch(error => console.error(error));
+  // }, []);
+
+
 
   const filteredPosts = posts.filter(post =>
     post.title.toLowerCase().includes(search.toLowerCase())
